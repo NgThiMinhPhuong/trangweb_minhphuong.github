@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #D3D3D3;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #04AA6D;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: orangered;
+        }
+
+        .active {
+            background-color: orangered;
+        }
+
+        .column {
+            flex: 33.33%;
+            height: 250px;
+            padding: 10px;
+            margin: 5px;
+            background-color: #F0F0F0;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            background-color: #F0F0F0;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h2>This is my brading</h2>
+        <p>Say something about website</p>
+        <p style="color: black;">
+            <i>
+                (Ng.Thị Minh Phương)
+            </i>
+        </p>
+        <p style="color: black;">
+            <i>
+                (TA.TC.CNT.3.22)
+            </i>
+        </p>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="column">
+            <h2> Sơ Lượt về ngựa </h2>
+            <p> Loài ngựa là một trong những loài động vật có ý nghĩa lịch sử và văn hóa lớn. Được thuần dưỡng và sử dụng bởi con người từ hàng ngàn năm trước,
+             ngựa đã trở thành một phần không thể thiếu của cuộc sống và nền văn hóa của nhiều dân tộc trên toàn thế giới,sức mạnh và sự bền bỉ,thể hình mạnh mẽ
+            và cơ bắp săn chắc, ngựa đã được sử dụng trong nhiều mục đích khác nhau,từ làm việc trên cánh đồng đến tham gia các cuộc đua và thậm chí là trong quân đội. 
+            Sức mạnh của ngựa không chỉ đến từ cơ bắp mà còn từ tinh thần gan dạ và trung thành. </p>
+        </div>
+        <div class="column">
+            <h2> Ảnh Về Ngựa</h2>
+            <img src="IMAGES/NGUA.jPEG" alt="" width="150px" height="150px">
+        </div>
+        <div class="column">
+            <h2> Âm Thanh </h2>
+            <audio controls autoplay>
+                <source src="IMAGES/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <p>MINHPHUONG@GMAIL.COM</p>
+    </footer>
+
+</body>
+
+</html>
